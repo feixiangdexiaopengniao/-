@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>走进青年</title>
+	<style>
+		*{margin:0px;padding:0px;}
+		.hea{
+		    width:1920px;
+		    height:75px;
+		    margin:0px auto;
+		    position:relative;
+		    display:inline-block;
+		}
+		.hea>.logo{
+		    width:145px;
+		    height:243px;
+			margin:0px auto;
+		  	position:absolute;
+		  	left:400px;
+		  	top:0px;
+		  	z-index:1;
+		  	background:url(img/logo.png);
+		}
+		.hea>.men{
+		  	width:910px;
+		  	height:100%;
+		  	margin:0px auto;
+		  	margin-left:600px;
+		  	display:inline-block;
+		  	list-style:none;
+		}
+		.hea>.men>li{
+		  	width:160px;
+		  	height:100%;
+		  	margin:0px auto;
+		  	float:left;
+		  	display:inline-block;
+		}
+		.hea>.men>li:first-child{
+		  	width:110px;
+		}
+		.hea>.men>li>a{
+		  	width:100%;
+		  	height:100%;
+		  	margin:0px auto;
+		  	display:inline-block;
+		  	text-decoration:none;
+		  	font-size:24px;
+		  	font-family:"黑体";
+		  	color:#000000;
+		  	text-align:center;
+		  	line-height:75px;
+		  	transition:color 0.1s linear;
+		}
+		.hea>.men>li:nth-child(2)>a{
+		  	color:#b30013;
+		}
+		.hea>.men>li>a:hover{
+		  	color:#b30013;
+		}
+		.tail{
+		  	width:1920px;
+		  	height:430px;
+		  	margin:0px auto;
+		  	margin-top:200px;
+		  	background:url(img/qnct.jpg) 0px -165px;
+		  	background-size:1920px 760px;
+		}
+		.tail>.back{
+		  	width:100%;
+		  	height:100%;
+		  	margin:0px auto;
+		  	background:rgba(0,0,0,0.5);
+		  	display:inline-block;
+		}
+		.tail>.back>.men{
+		  	width:1180px;
+		  	height:100%;
+		  	margin:0px auto;
+		  	display:block;
+		}
+		.tail>.back>.men>dl{
+		  	width:295px;
+		  	height:100%;
+		  	margin:0px auto;
+		  	float:left;
+		  	display:inline-block;
+		}
+		.tail>.back>.men>dl>dt{
+		  	width:100%;
+		  	margin:0px auto;
+		  	margin-top:95px;
+		  	margin-bottom:70px;
+		  	display:block;
+		  	font-size:36px;
+		  	font-family:"黑体";
+		  	color:rgba(255,255,255,0.7);
+		  	text-align:center;
+		  	position:relative;
+		}
+		.tail>.back>.men>dl>dt:after{
+		  	content:"";
+		  	width:80px;
+		  	height:2px;
+		  	display:inline-block;
+		  	background:rgba(255,255,255,0.7);
+		  	position:absolute;
+		  	top:75px;
+		  	left:107px;
+		}
+		.tail>.back>.men>dl>dd>a{
+		  	width:100%;
+		  	margin:0px auto;
+		  	display:block;
+		  	text-decoration:none;
+		  	font-size:26px;
+		  	font-family:"黑体";
+		  	color:rgba(255,255,255,0.7);
+		  	text-align:center;
+		  	line-height:46px;
+		  	transition:color 0.1s linear;
+		}
+		.tail>.back>.men>dl>dd>a:hover{
+		  	color:rgba(255,255,255,1);
+		}
+		.banner{
+			width:1920px;
+			height:680px;
+			margin:0px auto;
+			background:url(img/restaurant.png);
+  			display:inline-block;
+  			position:relative;
+		}
+		.banner>.butl{
+		  	width:75px;
+		  	height:75px;
+		  	margin:0px auto;
+		  	border-radius:50% 50%;
+		  	position:absolute;
+		  	left:20px;
+		  	top:350px;
+		  	background:url(img/buttonl.png);
+		}
+		.banner>.butr{
+		  	width:75px;
+		  	height:75px;
+		  	margin:0px auto;
+		  	border-radius:50% 50%;
+		 	position:absolute;
+		  	left:1825px;
+		  	top:350px;
+		  	background:url(img/buttonr.png);
+		}
+		.banner>.nice{
+			width:290px;
+			height:265px;
+			margin:0px auto;
+			margin-top:10px;
+			background:url(img/nice.png);
+		}
+		.banner>span{
+			width:940px;
+			height:60px;
+			margin:0px auto;
+			margin-top:100px;
+			display:block;
+			font-size:19px;
+			color:#ffffff;
+			font-family:"黑体";
+			font-weight:600;
+			line-height:30px;
+		}
+		.banner>.djck{
+			width:220px;
+			height:55px;
+			margin:0px auto;
+			margin-top:90px;
+			border:2px solid #ffffff;
+			box-sizing:border-box;
+			display:block;
+			text-decoration:none;
+			font-size:24px;
+			font-family:"宋体";
+			color:#ffffff;
+			text-align:center;
+			line-height:55px;
+			transition:background 0.1s linear;
+		}
+		.banner>.djck:hover{
+			background:#000000;
+		}
+		.banner>.cir{
+		  	width:120px;
+		  	height:17px;
+		  	margin:0px auto;
+		  	margin-left:900px;
+		  	margin-top:35px;
+		  	display:inline-block;
+		}
+		.banner>.cir>dd{
+		  	width:15px;
+		  	height:15px;
+		  	margin:0px auto;
+		  	margin-top:1px;
+		  	float:left;
+		  	display:inline-block;
+		  	border-radius:50% 50%;
+		  	background:#ffffff;
+		}
+		.banner>.cir>dd:nth-child(2){
+		  	margin-top:0px;
+		  	margin-left:36px;
+		  	border:1px solid #ffffff;
+		  	background:none;
+		}
+		.banner>.cir>dd:last-child{
+		  	float:right;
+		}
+		.banner>.cir>dd>a{
+		  	width:100%;
+		  	height:100%;
+		  	margin:0px auto;
+		  	display:inline-block;
+		}
+		.gywm{
+			width:1200px;
+			margin:0px auto;
+			margin-top:75px;
+			margin-left:360px;
+			position:relative;
+		}
+		.gywm:before{
+			content:"";
+			width:5px;
+			height:75px;
+			background:#b20000;
+			display:inline-block;
+			position:absolute;
+			top:0px;
+			left:-15px;
+		}
+		.gywm>.titc{
+			height:40px;
+			margin:0px auto;
+			display:block;
+			font-size:40px;
+			line-height:40px;
+		}
+		.gywm>.tite{
+			height:24px;
+			margin:0px auto;
+			margin-top:11px;
+			display:block;
+			font-size:24px;
+			font-family:"Segoe UI";
+			line-height:24px;
+		}
+		.gywm>p{
+			width:100%;
+			height:200px;
+			margin:0px auto;
+			margin-top:90px;
+			display:inline-block;
+			font-size:24px;
+			font-weight:600;
+			line-height:40px;
+		}
+		.gywm>.pic{
+			width:100%;
+			height:360px;
+			margin:0px auto;
+			margin-top:105px;
+			display:inline-block;
+			background:url(img/gywm.png);
+		}
+		.qnwh{
+			width:1920px;
+			margin:0px auto;
+			margin-top:90px;
+			display:inline-block;
+		}
+		.qnwh>.titc{
+		  	width:100%;
+		  	height:50px;
+		  	margin:0px auto;
+		  	display:inline-block;
+		  	text-align:center;
+		  	font-size:40px;
+		  	font-family:"微软雅黑";
+		}
+		.qnwh>.tite{
+		  	width:100%;
+		  	height:27px;
+		  	margin:0px auto;
+		  	display:inline-block;
+		  	text-align:center;
+		  	font-size:15px;
+		  	font-family:"Segoe UI";
+		}
+		.qnwh>.gang{
+		  	width:120px;
+		  	height:3px;
+		  	margin:0px auto;
+		  	margin-left:900px;
+		  	display:inline-block;
+		  	background:#b20000;
+		}
+		.qnwh>.pic{
+		  	width:1200px;
+		  	height:360px;
+		  	margin:0px auto;
+		  	margin-top:65px;
+		  	margin-left:360px;
+		  	display:block;
+		  	background:url(img/qnwh.png);
+		}
+		.qnwh>ul{
+			width:1200px;
+			height:50px;
+			margin:0px auto;
+			margin-top:50px;
+			display:block;
+			list-style:none;
+		}
+		.qnwh>ul>li{
+			width:240px;
+			height:100%;
+			margin:0px auto;
+			float:left;
+			display:block;
+			text-align:center;
+			font-size:14px;
+			font-family:"黑体";
+			line-height:20px;
+		}
+		.qnwh>ul>li>p{
+			margin-top:10px;
+		}
+		.dsj{
+			width:1920px;
+			height:573px;
+			margin:0px auto;
+			margin-top:85px;
+			display:inline-block;
+			background:url(img/dsj.png);
+		}
+		.dsj>.tit{
+			width:100%;
+			height:38px;
+			margin:0px auto;
+			margin-top:50px;
+			display:block;
+			font-size:22px;
+			font-family:"黑体";
+			color:#ffffff;
+			text-align:center;
+		}
+		.dsj>.his{
+			width:100%;
+			margin:0px auto;
+			display:block;
+			font-family:"黑体";
+			color:#ffffff;
+			text-align:center;
+			line-height:30px;
+		}
+		.dsj>.buts{
+			width:140px;
+			height:55px;
+			margin:0px auto;
+			margin-top:45px;
+			margin-bottom:8px;
+			margin-left:890px;
+			display:inline-block;
+			list-style:none;
+		}
+		.dsj>.buts>li{
+			width:55px;
+			height:100%;
+			margin:0px auto;
+			float:left;
+			display:inline-block;
+			background:url(img/buttonl.png);
+			background-size:100% 100%;
+		}
+		.dsj>.buts>li:last-child{
+			float:right;
+			background:url(img/buttonr.png);
+			background-size:100% 100%;
+		}
+		.dsj>.buts>li>a{
+			width:100%;
+			height:100%;
+			margin:0px auto;
+			border-radius:50% 50%;
+			display:inline-block;
+			text-decoration:none;
+		}
+		.dsj>.year{
+			width:100%;
+			margin:0px auto;
+			margin-top:16px;
+			display:block;
+			font-size:20px;
+			font-family:"Arial";
+			color:#ffffff;
+			text-align:center;
+		}
+		.dsj>p{
+			width:100%;
+			margin:0px auto;
+			margin-top:16px;
+			display:block;
+			font-size:18px;
+			color:#ffffff;
+			text-align:center;
+		}	
+		.dsj>.time{
+			width:800px;
+			height:40px;
+			margin:0px auto;
+			margin-top:70px;
+			display:block;
+			background:url(img/time.png);
+			position:relative;
+		}
+		.dsj>.time>.point{
+			width:18px;
+			height:49px;
+			margin:0px auto;
+			display:inline-block;
+			background:url(img/point.png);
+			position:absolute;
+			top:-5px;
+			left:33px;
+		}
+		.dsj>.time>.year{
+			width:800px;
+			height:16px;
+			margin:0px auto;
+			margin-top:50px;
+			display:inline-block;
+			list-style:none;
+		}
+		.dsj>.time>.year>li{
+			width:60px;
+			height:100%;
+			margin:0px auto;
+			margin-left:120px;
+			display:inline-block;
+			float:left;
+			font-family:"Times New Roman";
+			color:#ffffff;
+			text-align:center;
+		}
+		.dsj>.time>.year>li:first-child{
+			margin-left:12px;
+			font-family:"Arial";
+			font-weight:600;
+			color:#ffffff;
+		}
+		.dsj>.time>.year>li:nth-child(2){
+			margin-left:75px;
+		}
+		.qyry{
+			width:1920px;
+			margin:0px auto;
+			margin-top:72px;
+			display:inline-block;
+		}
+		.qyry>.titc{
+		  	width:100%;
+		  	height:50px;
+		  	margin:0px auto;
+		  	display:inline-block;
+		  	text-align:center;
+		  	font-size:40px;
+		  	font-family:"微软雅黑";
+		}
+		.qyry>.tite{
+		  	width:100%;
+		  	height:27px;
+		  	margin:0px auto;
+		  	display:inline-block;
+		  	text-align:center;
+		  	font-size:15px;
+		  	font-family:"Segoe UI";
+		}
+		.qyry>.gang{
+		  	width:120px;
+		  	height:3px;
+		  	margin:0px auto;
+		  	margin-left:900px;
+		  	display:inline-block;
+		  	background:#b20000;
+		}
+		.qyry>.honors{
+			width:100%;
+			height:265px;
+			margin:0px auto;
+			margin-top:70px;
+			display:inline-block;
+			position:relative;
+		}
+		.qyry>.honors>dd:first-child{
+			width:228px;
+			height:159px;
+			margin:0px auto;
+			display:inline-block;
+			background:url(img/qyry1.jpg);
+			background-size:100% 100%;
+			position:absolute;
+			top:53px;
+			left:640px;
+			z-index:1;
+			box-shadow:0px 6px 12px #000000;
+		}
+		.qyry>.honors>dd:nth-child(2){
+			width:304px;
+			height:212px;
+			margin:0px auto;
+			display:inline-block;
+			background:url(img/qyry2.jpg);
+			background-size:100% 100%;
+			position:absolute;
+			top:26px;
+			left:705px;
+			z-index:2;
+			box-shadow:0px 6px 12px #000000;
+		}
+		.qyry>.honors>dd:nth-child(3){
+			width:380px;
+			height:265px;
+			margin:0px auto;
+			display:inline-block;
+			background:url(img/qyry3.jpg);
+			background-size:100% 100%;
+			position:absolute;
+			top:0px;
+			left:770px;
+			z-index:3;
+			box-shadow:0px 6px 12px #000000;
+		}
+		.qyry>.honors>dd:nth-child(4){
+			width:304px;
+			height:212px;
+			margin:0px auto;
+			display:inline-block;
+			background:url(img/qyry4.jpg);
+			background-size:100% 100%;
+			position:absolute;
+			top:26px;
+			left:911px;
+			z-index:2;
+			box-shadow:0px 6px 12px #000000;
+		}
+		.qyry>.honors>dd:last-child{
+			width:228px;
+			height:159px;
+			margin:0px auto;
+			display:inline-block;
+			background:url(img/qyry5.jpg);
+			background-size:100% 100%;
+			position:absolute;
+			top:53px;
+			left:1051px;
+			z-index:1;
+			box-shadow:0px 6px 12px #000000;
+		}
+		.qyry>.honors>dd:hover{
+			width:380px;
+			height:265px;
+			top:0px;
+			z-index:4;
+		}
+		.qyry>.honors>dd>a{
+			width:100%;
+			height:100%;
+			margin:0px auto;
+			display:inline-block;
+			text-decoration:none;
+		}
+	</style>
+</head>
+<body>
+	<div class="hea">
+		<div class="logo"></div>
+		<ul class="men">
+			<li><a href="../首页/sy.html">首页</a></li>
+			<li><a href="../走进青年/zjqn.html">走进青年</a></li>
+			<li><a href="../青年美食/qnms.html">青年美食</a></li>
+			<li><a href="../食品供应/spgy.html">食品供应</a></li>
+			<li><a href="../青年预定/qnyd.html">青年预定</a></li>
+			<li><a href="../联系我们/lxwm.html">联系我们</a></li>
+		</ul>
+	</div>
+	<div class="banner">
+		<a href="#" class="butl"></a>
+		<a href="#" class="butr"></a>
+		<div class="nice"></div>
+		<span>面向未来，新世纪青年餐饮管理有限公司将继续秉持“尊重员工、服务客户”的企业宗旨，持续引进国际先进的设备技术、管理理念和经营人才，不断增强企业的综合实力，最终成为全球最具竞争力的餐饮品牌。</span>
+		<a href="#" class="djck">点击查看</a>
+		<dl class="cir">
+			<dd><a href="#"></a></dd>
+			<dd><a href="#"></a></dd>
+			<dd><a href="#"></a></dd>
+		</dl>
+	</div>
+	<div class="gywm">
+		<span class="titc">关于我们</span>
+		<span class="tite">About Ours</span>
+		<p>&emsp;&emsp;经过青年人19年的耕耘发展，新世纪青年餐饮管理有限公司已发展成为跨京、津、沪、皖、苏五大区域，拥有近40家直营门店，3000余名员工的大型专业化餐饮连锁企业。多年来，新世纪青年餐饮管理有限公司凭借精致美味的菜肴、时尚舒适的环境和优质贴心的服务屡获殊荣，包揽了多项餐饮界重要奖项：荣获“2015年北京餐饮企业50强”、2015年度北京餐饮十大时尚品牌“、”2015年中国十家休闲特色餐饮品牌“、”最具市场号召力品牌“等荣誉，并在2016年度中国餐饮集团百强榜，排行上位居中国第40位。</p>
+		<div class="pic"></div>
+	</div>
+	<div class="qnwh">
+		<span class="titc">青年文化</span>
+		<span class="tite">Youth culture</span>
+		<div class="gang"></div>
+		<div class="pic"></div>
+		<ul>
+			<li>
+				<b>青年理念</b>
+				<p>用心 专注 凝聚 求变</p>
+			</li>
+			<li>
+				<b>青年精神</b>
+				<p>勤奋 好学 务实 进取</p>
+			</li>
+			<li>
+				<b>青年使命</b>
+				<p>为目标客户创造餐饮体验价值</p>
+			</li>
+			<li>
+				<b>核心价值</b>
+				<p>爱 责任 分享</p>
+			</li>
+			<li>
+				<b>青年愿景</b>
+				<p>以中华美食分享世界 创建国际</p>
+			</li>
+		</ul>
+	</div>
+	<div class="dsj">
+		<span class="tit">大事记</span>
+		<span class="his">1999年，青年餐厅品牌正式成立</span>
+		<span class="his">Event chronicle</span>
+		<ul class="buts">
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+		<span class="year">2018</span>
+		<p>青年公社品牌入驻南京市场</p>
+		<div class="time">
+			<div class="point"></div>
+			<ul class="year">
+				<li>2018</li>
+				<li>2016</li>
+				<li>2014</li>
+				<li>2012</li>
+				<li>2010</li>
+			</ul>
+		</div>
+	</div>
+	<div class="qyry">
+		<span class="titc">企业荣誉</span>
+		<span class="tite">Enterpise Honors</span>
+		<div class="gang"></div>
+		<dl class="honors">
+			<dd><a href="#"></a></dd>
+			<dd><a href="#"></a></dd>
+			<dd><a href="#"></a></dd>
+			<dd><a href="#"></a></dd>
+			<dd><a href="#"></a></dd>
+		</dl>
+	</div>
+	<div class="tail">
+		<div class="back">
+			<div class="men">
+				<dl>
+					<dt>走进青年</dt>
+					<dd><a href="#">青年简介</a></dd>
+					<dd><a href="#">青年文化</a></dd>
+					<dd><a href="#">企业荣誉</a></dd>
+				</dl>
+				<dl>
+					<dt>青年美食</dt>
+					<dd><a href="#">招牌美食</a></dd>
+					<dd><a href="#">经典菜系</a></dd>
+					<dd><a href="#">健康产品</a></dd>
+				</dl>
+				<dl>
+					<dt>新闻动态</dt>
+					<dd><a href="#">集团新闻</a></dd>
+					<dd><a href="#">视频展播</a></dd>
+				</dl>
+				<dl>
+					<dt>品牌战略</dt>
+					<dd><a href="#">青年餐厅</a></dd>
+					<dd><a href="#">青年公社</a></dd>
+					<dd><a href="#">易小食</a></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
